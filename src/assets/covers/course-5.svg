@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="t">
+  <title id="t">日常生活中文对话</title>
+  <!-- Tokens: role -> Tailwind default palette value (teal/blue/white, same palette as the site UI) -->
+  <style>
+    :root {
+      --cover-bg-from: #0f766e;   /* teal-700 */
+      --cover-bg-to: #115e59;   /* teal-800 */
+      --cover-fg: #ffffff;   /* white */
+      --cover-accent: #99f6e4;   /* teal-200 */
+      --cover-pill-bg: #ffffff;   /* white */
+      --cover-pill-fg: #134e4a;   /* teal-900 */
+      --cover-shape-strong: 0.9;
+      --cover-shape-mid: 0.28;
+      --cover-shape-soft: 0.14;
+      --cover-font: "PingFang SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
+    }
+    .bg-from { stop-color: var(--cover-bg-from); }
+    .bg-to { stop-color: var(--cover-bg-to); }
+    .fg { fill: var(--cover-fg); font-family: var(--cover-font); font-weight: 700; }
+    .pill { fill: var(--cover-pill-bg); }
+    .pill-text { fill: var(--cover-pill-fg); font-family: var(--cover-font); font-weight: 700; }
+    .cat { fill: var(--cover-accent); font-family: var(--cover-font); font-weight: 600; }
+    .s-soft { fill: var(--cover-fg); fill-opacity: var(--cover-shape-soft); }
+    .s-mid { fill: var(--cover-fg); fill-opacity: var(--cover-shape-mid); }
+    .s-strong { fill: var(--cover-fg); fill-opacity: var(--cover-shape-strong); }
+    .s-accent { fill: var(--cover-accent); }
+    .l-mid { fill: none; stroke: var(--cover-fg); stroke-opacity: var(--cover-shape-mid); stroke-width: 6; stroke-linecap: round; }
+    .l-strong { fill: none; stroke: var(--cover-accent); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop class="bg-from" offset="0"/>
+      <stop class="bg-to" offset="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g>
+    <rect class="s-mid" x="470" y="70" width="230" height="130" rx="40"/>
+    <path class="s-mid" d="M520 198 l-20 46 l56 -36 z"/>
+    <rect class="s-strong" x="540" y="215" width="210" height="120" rx="38"/>
+    <path class="s-strong" d="M700 333 l24 42 l-58 -36 z"/>
+    <circle class="s-accent" cx="520" cy="135" r="9"/><circle class="s-accent" cx="560" cy="135" r="9"/><circle class="s-accent" cx="600" cy="135" r="9"/>
+  </g>
+  <text class="fg" x="48" y="172" font-size="54">日常生活</text>
+  <text class="fg" x="48" y="240" font-size="54">中文对话</text>
+  <rect class="pill" x="48" y="288" width="112" height="48" rx="24"/>
+  <text class="pill-text" x="104.0" y="321" font-size="28" text-anchor="middle">初级</text>
+  <text class="cat" x="178" y="322" font-size="28">日常对话</text>
+</svg>

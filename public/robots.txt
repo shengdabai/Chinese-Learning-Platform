@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /pricing
+Allow: /about
+Disallow: /login
+Disallow: /api/
+
+Sitemap: https://chineselearning.com/sitemap.xml
